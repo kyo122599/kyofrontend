@@ -1,0 +1,63 @@
+/* Contenedor principal */
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos botones por fila */
+  gap: 20px; /* Espacio entre botones */
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 2cm auto 0; /* Margen superior de 2cm */
+}
+
+/* Botones en forma de auto */
+.boton-auto {
+  width: 120px;
+  height: 80px;
+  background: linear-gradient(135deg, #a64df2, #ff6cf9, #ffd600); /* Degradado morado combinado con colores vibrantes */
+  border-radius: 30px 30px 10px 10px; /* Forma de auto */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.6); /* Resplandor */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.boton-auto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.8);
+}
+
+/* Icono del auto */
+.auto-icon {
+  font-size: 24px; /* Tamaño del icono */
+}
+
+/* Etiqueta del botón */
+.auto-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+/* Mensaje estilizado */
+.mensaje {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #6a0dad, #c084fc, #ffcccb); /* Fondo morado degradado para el mensaje */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
